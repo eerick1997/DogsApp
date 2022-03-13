@@ -12,7 +12,7 @@ import com.eerick.dogos.database.DogsContract.SQL_CREATE_ENTRIES
  *
  * @param context
  */
-class DogsReaderDbHelper(context: Context) :
+    class DogsReaderDbHelper(context: Context) :
     SQLiteOpenHelper(context,
         DATABASE_NAME,
         null /* factory */,
