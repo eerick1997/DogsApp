@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_alignBottom="@+id/image_card">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_card_pet_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:textColor="#333333"
+                android:textSize="25sp"
+                android:text="@string/name"/>
+            <TextView
+                android:id="@+id/text_card_pet_description"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:textColor="#666666"
+                android:maxLines="3"
+                android:text="@string/description_very_large"/>
+            <TextView
+                android:id="@+id/text_card_pet_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:textColor="#333333"
+                android:text="@string/age"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="123.6068dp"
+        android:layout_height="200dp"
+        android:id="@+id/image_card"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="8dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_view_pet_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:placeholderImage="@drawable/ic_launcher_background"
+            android:contentDescription="@string/pet_photo" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
